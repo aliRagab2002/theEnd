@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Hospital System</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>H<span>ospital System</span></h3>
+        </div>
+        
+      
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="login.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Home</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="addPatients.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Add Patients</small>
+                        </a>
+                    </li>
+             
+    
+                    <li>
+                        <a href="">
+                             <span class="las la-user-alt"></span>
+                             <small>Patients</small>
+                         </a>
+                     </li>
+                  
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <small>Home / Dashboard</small>
+            </div>
+            
+            <div class="page-content">
+            
+                <!-- <div class="analytics">
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>107,200</h2>
+                            <span class="las la-user-friends"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Donors activity this month</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>340,230</h2>
+                            <span class="las la-user-friends"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>patients activity this month</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>47,500</h2>
+                            <img width="48" height="48" src="https://img.icons8.com/emoji/48/drop-of-blood-emoji.png" alt="drop-of-blood-emoji"/>
+                        </div>
+                        <div class="card-progress">
+                            <small>blood amount</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Entries</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                            <button>Add record</button>
+                        </div>
+
+                        <div class="browse">
+                           <input type="search" placeholder="Search" class="record-search">
+                            <select name="" id="">
+                                <option value="">Status</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%" >
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th><span class="las la-sort"></span>First</th>
+                                    <th><span class="las la-sort"></span> Age</th>
+                                    <th><span class="las la-sort"></span> Email</th>
+                                    <th><span class="las la-sort"></span> Gender</th>
+                                    <th><span class="las la-sort"></span> ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- <tr>
+                                    <td>#1</td>
+                                    <td>
+                                       
+                                       Andrew 
+                      
+                                    </td>
+                                    <td>
+                                       20 year
+                                    </td>
+                                    <td>
+                                     ra@gmail.com
+                                    </td>
+                                    <td>
+                                       male
+                                    </td>
+
+                                    <td>
+                                       Sugar
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+        </main>
+        
+    </div>
+    <script src="js/patients.js"></script>
+</body>
+</html>
